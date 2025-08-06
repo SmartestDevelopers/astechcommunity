@@ -13,12 +13,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
 
-  <link rel="stylesheet" href="../../../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../../../unpkg.com/leaflet%401.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+  <link rel="stylesheet" href="{{ asset('template/cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css') }}" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="{{ asset('template/unpkg.com/leaflet%401.7.1/dist/leaflet.css') }}" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/vendors.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="{{ asset('template/css/vendors.css') }}">
+  <link rel="stylesheet" href="{{ asset('template/css/main.css') }}">
 
   <title>Educrat</title>
 </head>
@@ -44,7 +44,7 @@
 
               <div class="header__logo ">
                 <a data-barba href="index.html">
-                  <img src="img/general/logo.svg" alt="logo">
+                  <img src="{{ asset('template/img/general/logo.svg') }}" alt="logo">
                 </a>
               </div>
 
@@ -857,7 +857,7 @@
                           <input type="text" class="col-12 text-18 lh-12 text-dark-1 fw-500" placeholder="What do you want to learn?">
 
                           <button class="d-flex items-center justify-center size-40 rounded-full bg-purple-3" data-el-toggle=".js-search-toggle">
-                            <img src="img/menus/close.svg" alt="icon">
+                            <img src="{{ asset('template/img/menus/close.svg')}}" alt="icon">
                           </button>
                         </div>
 
@@ -897,7 +897,7 @@
                           <div class="col">
                             <div class="row x-gap-10 y-gap-10">
                               <div class="col-auto">
-                                <img src="img/menus/cart/1.png" alt="image">
+                                <img src="{{ asset('template/img/menus/cart/1.png')}}" alt="image">
                               </div>
 
                               <div class="col">
@@ -912,7 +912,7 @@
                           </div>
 
                           <div class="col-auto">
-                            <button><img src="img/menus/close.svg" alt="icon"></button>
+                            <button><img src="{{ asset('template/img/menus/close.svg')}}" alt="icon"></button>
                           </div>
                         </div>
 
@@ -920,7 +920,7 @@
                           <div class="col">
                             <div class="row x-gap-10 y-gap-10">
                               <div class="col-auto">
-                                <img src="img/menus/cart/2.png" alt="image">
+                                <img src="{{ asset('template/img/menus/cart/2.png')}}" alt="image">
                               </div>
 
                               <div class="col">
@@ -935,7 +935,7 @@
                           </div>
 
                           <div class="col-auto">
-                            <button><img src="img/menus/close.svg" alt="icon"></button>
+                            <button><img src="{{ asset('template/img/menus/close.svg')}}" alt="icon"></button>
                           </div>
                         </div>
 
@@ -988,7 +988,7 @@
             <div class="row y-gap-20 justify-between items-center">
               <div class="col-auto">
                 <div class="footer-header__logo">
-                  <img src="img/footer/footer-logo.svg" alt="logo">
+                  <img src="{{ asset('template/img/footer/footer-logo.svg')}}" alt="logo">
                 </div>
               </div>
               <div class="col-auto">
@@ -1109,9 +1109,13 @@
   </main>
 
   <!-- JavaScript -->
-  <script src="../../../unpkg.com/leaflet%401.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-  <script src="{{ asset('astech/template/js/vendors.js' }}"></script>
-  <script src="{{ asset('astech/template/js/main.js' }}"></script>
+<!-- Corrected Leaflet.js CDN -->
+<script src="template/unpkg.com/leaflet%401.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+<!-- Corrected local asset paths -->
+<script src="{{ asset('template/js/vendors.js') }}"></script>
+<script src="{{ asset('template/js/main.js') }}"></script>
+</script>
 </body>
 
 
