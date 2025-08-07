@@ -3423,7 +3423,7 @@
 
                           <div class="coursesCard-footer">
                             <div class="coursesCard-footer__author">
-                              <img src="img/general/avatar-1.png" alt="image">
+                              <img src="{{ asset('template/img/general/avatar-1.png')}}" alt="image">
                               <div>Ali Tufan</div>
                             </div>
 
@@ -3444,7 +3444,7 @@
                       <a href="courses-single-1.html" class="coursesCard -type-1 ">
                         <div class="relative">
                           <div class="coursesCard__image overflow-hidden rounded-8">
-                            <img class="w-1/1" src="img/coursesCards/3.png" alt="image">
+                            <img class="w-1/1" src="{{ asset('template/img/coursesCards/3.png')}}" alt="image">
                             <div class="coursesCard__image_overlay rounded-8"></div>
                           </div>
                           <div class="d-flex justify-between py-10 px-10 absolute-full-center z-3">
@@ -3471,21 +3471,21 @@
 
                             <div class="d-flex items-center">
                               <div class="mr-8">
-                                <img src="img/coursesCards/icons/1.svg" alt="icon">
+                                <img src="{{ asset('template/img/coursesCards/icons/1.svg')}}" alt="icon">
                               </div>
                               <div class="text-14 lh-1">6 lesson</div>
                             </div>
 
                             <div class="d-flex items-center">
                               <div class="mr-8">
-                                <img src="img/coursesCards/icons/2.svg" alt="icon">
+                                <img src="{{ asset('template/img/coursesCards/icons/2.svg')}}" alt="icon">
                               </div>
                               <div class="text-14 lh-1">3h 56m</div>
                             </div>
 
                             <div class="d-flex items-center">
                               <div class="mr-8">
-                                <img src="img/coursesCards/icons/3.svg" alt="icon">
+                                <img src="{{ asset('template/img/coursesCards/icons/3.svg')}}" alt="icon">
                               </div>
                               <div class="text-14 lh-1">Beginner</div>
                             </div>
@@ -3494,7 +3494,7 @@
 
                           <div class="coursesCard-footer">
                             <div class="coursesCard-footer__author">
-                              <img src="img/general/avatar-1.png" alt="image">
+                              <img src="{{ asset('template/img/general/avatar-1.png')}}" alt="image">
                               <div>Ali Tufan</div>
                             </div>
 
@@ -3515,7 +3515,7 @@
                       <a href="courses-single-1.html" class="coursesCard -type-1 ">
                         <div class="relative">
                           <div class="coursesCard__image overflow-hidden rounded-8">
-                            <img class="w-1/1" src="img/coursesCards/4.png" alt="image">
+                            <img class="w-1/1" src="{{ asset('template/img/coursesCards/4.png')}}" alt="image">
                             <div class="coursesCard__image_overlay rounded-8"></div>
                           </div>
                           <div class="d-flex justify-between py-10 px-10 absolute-full-center z-3">
